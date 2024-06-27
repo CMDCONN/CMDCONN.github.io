@@ -1,11 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Set the body to use flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
+/* Main content container */
+main {
+    flex: 1;
+}
+
+/* Header styling */
 header {
     background: #333;
     color: #fff;
@@ -27,6 +41,7 @@ header a {
     text-decoration: none;
 }
 
+/* Section styling */
 section {
     padding: 1rem 2rem;
     background: #fff;
@@ -58,12 +73,11 @@ ul li {
     margin: 0;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
     background: #333;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
 }
